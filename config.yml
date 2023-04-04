@@ -1,0 +1,15 @@
+baseURL: http://localhost:3000
+languageCode: en-ie
+enableInlineShortcodes: true
+title: "Gal's Blog"
+theme: PaperMod
+defaultTheme: light
+disableThemeToggle: true
+markup:
+  goldmark:
+    renderer:
+      unsafe: true
+Params:
+  ShowBreadCrumbs: true
+  ShowReadingTime: true
+  ShowCopyCodeButtons: true
