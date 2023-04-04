@@ -44,10 +44,6 @@ Packet loss is a common issue on the internet, especially on mobile networks (se
 ![Effect of Latency on HTTP/2](/img/quic-vs-tcp/latency/latency_http2.svg)
 ![Effect of Latency on HTTP/1](/img/quic-vs-tcp/latency/latency_http1.svg)
 
-<!-- {{< galleryrow dir="/img/quic-vs-tcp/latency" >}} -->
-
-<!-- {{< images dir="latency" >}} -->
-
 <!-- <div style="width: 55vw; transform: translateX(calc((75vw - 100vw)/2)); display: flex; align-items: center; justify-content: space-around"> 
     <img style="display: inline-block; width:400px; height: 350px" src="/img/quic-vs-tcp/latency/latency_http3.svg" alt="Effect of latency on HTTP/3">
     <img style="display: inline-block; width:400px; height: 350px" src="/img/quic-vs-tcp/latency/latency_http2.svg" alt="Effect of latency on HTTP/2" >
