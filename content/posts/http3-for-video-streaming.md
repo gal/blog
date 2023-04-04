@@ -26,7 +26,6 @@ Its the newest iteration of the HTTP application layer protocol, used to transfe
 ![Effect of Packet loss on HTTP/2](/img/quic-vs-tcp/loss/loss_http2.svg)
 ![Effect of Packet loss on HTTP/1](/img/quic-vs-tcp/loss/loss_http1.svg)
 
-<!-- {{< galleryrow dir="/img/quic-vs-tcp/loss" >}} -->
 <!-- <div style="width: 55vw; transform: translateX(calc((75vw - 100vw)/2)); display: flex; align-items: center; justify-content: space-around"> 
     <img style="display: inline-block; max-width:350px; height: 300px" src="/img/quic-vs-tcp/loss/loss_http3.svg" alt="Effect of packet loss on HTTP/3">
     <img style="display: inline-block; max-width:350px; height: 300px" src="/img/quic-vs-tcp/loss/loss_http2.svg" alt="Effect of packet loss on HTTP/2" >
