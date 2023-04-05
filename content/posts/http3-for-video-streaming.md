@@ -35,7 +35,7 @@ Its the newest iteration of the HTTP application layer protocol, used to transfe
 
 ---
 
-Packet loss is a common issue on the internet, especially on mobile networks (see [^1]). The QUIC transport protocol handles packet loss much more efficiently than TCP, which previous versions of the HTTP spec sit atop. This can be explained by QUIC's FEC (Forward Error Correction) mechanism, which allows for the recovery of lost packets. This is not possible with TCP, which is a connection-oriented protocol, and as such, the loss of a single packet can cause the entire connection to be dropped.
+Packet loss is a common issue on the internet, especially on mobile networks (see [^1]). The QUIC transport protocol handles packet loss much more efficiently than TCP, which previous versions of the HTTP spec sit atop. This can be explained by QUIC's loss-detection mechanisms, mainly to do with packet numbers for retransmitted packets not being ambiguous, which allows for more efficient recovery of lost packets compared to TCP. This is not possible with TCP, which is a connection-oriented protocol, and as such, the loss of a single packet can cause the entire connection to be dropped.
 
 ### Latency
 
