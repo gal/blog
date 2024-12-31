@@ -2,6 +2,8 @@
 title: "Get Started with generative AI for Free"
 date: 2024-12-31T12:00:0+01:00
 draft: false
+weight: 3
+categories: ai
 ---
 
 # Introduction

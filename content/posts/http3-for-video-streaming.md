@@ -2,6 +2,7 @@
 title: "Evaluating Performance of HTTP/3 for Video Streaming: A Comparative Study with Previous Versions of HTTP"
 date: 2023-04-03T19:56:30+01:00
 draft: false
+categories: http
 ---
 
 ## Introduction

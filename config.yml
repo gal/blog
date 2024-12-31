@@ -1,4 +1,4 @@
-baseURL: http://localhost:1313
+baseURL: http://blog.galligan.dev
 # baseURL: https://www.blog.galligan.dev
 languageCode: en-ie
 enableInlineShortcodes: true
@@ -6,24 +6,51 @@ title: "Gal's Blog"
 theme: PaperMod
 defaultTheme: light
 disableThemeToggle: true
+
+taxonomies:
+  category: categories
+
 markup:
+  highlight:
+    # anchorLineNos: true
+    codeFences: true
+    guessSyntax: true
+    lineNos: true
+    # noClasses: false
+    style: monokai
   goldmark:
     renderer:
       unsafe: true
-Params:
-  author: Thomas Daniel Galligan
-  ShowToc: true
-  TocOpen: false
-  ShowBreadCrumbs: true
-  ShowReadingTime: true
-  ShowCopyCodeButtons: true
-  ShowPostNavLinks: true
+# Params:
 outputs:
   home:
     - HTML
     - RSS
     - JSON
+
+menu:
+  main:
+    - identifier: categories
+      name: Categories
+      url: /categories/
+      weight: 10
+    - identifier: galligan.dev
+      name: Website
+      url: https://galligan.dev
+
 params:
+  assets:
+    disableHLJS: true
+  author: Thomas Daniel Galligan
+  ShowToc: true
+  TocOpen: false
+  ShowBreadCrumbs: true
+  ShowReadingTime: true
+  ShowPostNavLinks: true
+  homeInfoParams:
+      Title: Hi there wave
+      Content: Can be Info, links, about...
+  ShowCopyCodeButtons: true
   fuseOpts:
     isCaseSensitive: false
     shouldSort: true
@@ -33,8 +60,3 @@ params:
     minMatchCharLength: 0
     # limit: 10 # refer: https://www.fusejs.io/api/methods.html#search
     keys: ["title", "permalink", "summary", "content"]
-
-params:
-  homeInfoParams:
-      Title: Hi there wave
-      Content: Can be Info, links, about...
