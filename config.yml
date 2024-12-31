@@ -1,4 +1,5 @@
-baseURL: https://www.blog.galligan.dev
+baseURL: http://localhost:1313
+# baseURL: https://www.blog.galligan.dev
 languageCode: en-ie
 enableInlineShortcodes: true
 title: "Gal's Blog"
@@ -10,6 +11,30 @@ markup:
     renderer:
       unsafe: true
 Params:
+  author: Thomas Daniel Galligan
+  ShowToc: true
+  TocOpen: false
   ShowBreadCrumbs: true
   ShowReadingTime: true
   ShowCopyCodeButtons: true
+  ShowPostNavLinks: true
+outputs:
+  home:
+    - HTML
+    - RSS
+    - JSON
+params:
+  fuseOpts:
+    isCaseSensitive: false
+    shouldSort: true
+    location: 0
+    distance: 1000
+    threshold: 0.4
+    minMatchCharLength: 0
+    # limit: 10 # refer: https://www.fusejs.io/api/methods.html#search
+    keys: ["title", "permalink", "summary", "content"]
+
+params:
+  homeInfoParams:
+      Title: Hi there wave
+      Content: Can be Info, links, about...
