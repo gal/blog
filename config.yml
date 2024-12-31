@@ -47,9 +47,6 @@ params:
   ShowBreadCrumbs: true
   ShowReadingTime: true
   ShowPostNavLinks: true
-  homeInfoParams:
-      Title: Hi there wave
-      Content: Can be Info, links, about...
   ShowCopyCodeButtons: true
   fuseOpts:
     isCaseSensitive: false
